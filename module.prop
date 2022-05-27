@@ -1,7 +1,0 @@
-id=autopmdisable
-name=自动冻结app
-version=1.0
-versionCode=100
-author=黑弩
-description=配置文件在 /data/adb/modules/autopmdisable/module.ini
-updateJson=https://github.com/heinu112/autodisableapp/blob/main/update.json
