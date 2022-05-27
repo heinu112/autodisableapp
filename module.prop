@@ -3,4 +3,5 @@ name=自动冻结app
 version=1.0
 versionCode=100
 author=黑弩
-description=配置文件在 ${MODPATH}/module.ini
+description=配置文件在 /data/adb/modules/autopmdisable/module.ini
+updateJson=
