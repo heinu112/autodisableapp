@@ -31,3 +31,8 @@ com.tencent.ig"
 disablepackagelist="com.miui.powerkeeper
 com.xiaomi.joyose"
 ```
+
+下载链接:
+https://github.com/heinu112/autodisableapp/releases
+
+下载autodisableapp.zip即可
