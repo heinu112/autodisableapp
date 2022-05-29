@@ -1,5 +1,6 @@
 #!/system/bin/sh
 source ${0%/*}/module.ini
+
 stop=0
 start=0
 while true
@@ -18,8 +19,14 @@ do
     {
     for disablepackage in ${disablepackagelist}
     do
-    pm disable-user ${disablepackage}
-    done }&
+    pm disable-user ${killpackage}
+    done
+    if [ ${ifkillpackage} ];then
+    for killpackage in ${killpackagelist}
+    do
+    kill -9 ${killpackage}
+    done
+    fi }&
     stop=0
     start=1
     fi
