@@ -1,6 +1,6 @@
 {
-  "versionCode": 100,
-  "version": "v1.0",
-  "zipUrl": "https://github.com/heinu112/autodisableapp/releases/download/v1.0/autodisableapp.zip",
+  "versionCode": 200,
+  "version": "v2.0",
+  "zipUrl": "https://github.com/heinu112/autodisableapp/releases/download/v2.0/autodisableapp.zip",
   "changelog": "https://raw.githubusercontent.com/heinu112/autodisableapp/update/update.md"
 }
