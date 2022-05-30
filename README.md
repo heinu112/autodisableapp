@@ -43,3 +43,5 @@ killpackagelist=""
 https://github.com/heinu112/autodisableapp/releases
 
 下载autodisableapp.zip即可
+
+autodisableappnetwork.zip是云端版本自动更新，请保证你网络能够正常访问raw.githubusercontent.com域名
