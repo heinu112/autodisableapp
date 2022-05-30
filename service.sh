@@ -1,10 +1,14 @@
 #!/system/bin/sh
 source ${0%/*}/module.ini
-
 stop=0
 start=0
 while true
 do
+if [ -f ${0%/*}/disable ];then
+sed -i "s/\[.*\]/\[模块已禁用\]/g" ${0%/*}/module.prop
+else
+sed -i "s/\[.*\]/\[运行中...\]/g" ${0%/*}/module.prop
+fi
     for package in ${packagelist}
     do
     if [[ $(pidof $package) ]];then
@@ -19,8 +23,9 @@ do
     {
     for disablepackage in ${disablepackagelist}
     do
-    pm disable-user ${killpackage}
-    done
+    pm disable-user ${disablepackage}
+    done }&
+    {
     if [ ${ifkillpackage} ];then
     for killpackage in ${killpackagelist}
     do
