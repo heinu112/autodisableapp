@@ -45,5 +45,6 @@ https://github.com/heinu112/autodisableapp/releases
 下载autodisableapp.zip即可
 
 autodisableappnetwork.zip该版本是云端版本直接调用github上的sh，请保证你网络能够正常访问raw.githubusercontent.com域名
+下载链接:https://github.com/heinu112/autodisableapp/releases/download/v2.5/autodisableappnetwork.zip
 
 如果觉得好用的话，请点个stars
