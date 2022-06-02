@@ -23,7 +23,14 @@ fi
     {
     for disablepackage in ${disablepackagelist}
     do
+    if [ ${ifcommand} ];then
+    su -c eval "${command}"
+    fi
+    if [ "$(pm list packages | grep "${disablepackage}")" ] || [ "$(pm list packages | grep -s "${disablepackage}")" ];then
     pm disable-user ${disablepackage}
+    else
+    echo "${disablepackage}未安装 跳过"
+    fi
     done }&
     {
     if [ ${ifkillpackage} ];then
@@ -40,7 +47,11 @@ fi
     {
     for disablepackage in ${disablepackagelist}
     do
+    if [ "$(pm list packages | grep "${disablepackage}")" ] || [ "$(pm list packages | grep -s "${disablepackage}")" ];then
     pm enable ${disablepackage}
+    else
+    echo "${disablepackage}未安装 跳过"
+    fi
     done }&
     fi
     stop=1
