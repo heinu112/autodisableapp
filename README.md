@@ -1,4 +1,4 @@
-# autodisableapp
+# magisk module-autodisableapp
 
 某个特定app启动时自动禁用app
 
